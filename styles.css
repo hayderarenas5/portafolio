@@ -32,6 +32,21 @@ body{
     margin-left: 20%;
     animation: fadeInUp 2.5s ease-in-out forwards infinite;
   }
+.imagen{
+ 
+  background-image: url(/imagenes/358154610_185285674278269_5049114957004494332_n.jpg);
+  background-size: cover;
+  border-radius: 40%;
+  height: 140px;
+  width: 140px;
+  margin-left: 41%;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+.imagen:hover {
+  border-radius: 50%;
+    transform: scale(1.2);
+  }
 .contenedor{
     z-index: 1;
     background-color: #1B4F72 ;

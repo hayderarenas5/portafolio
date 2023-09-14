@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js" integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/main.js" defer></script>
+</head>
+<body>
+    <section class="loader-wrapper">
+        <div class="loading"></div>
+    </section>
+    <header>
+        <a href="#home" class="navbar_logo">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48" class="nav_logo-icon">
+                <title>Academlo Logo</title>
+                <g>
+                    <g>
+                        <path d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z">
+                        </path>
+                    </g>
+                </g>
+            </svg>
+            <span class="store">STORE</span>
+        </a>
+        <div class="header-store">
+           <ul>
+                <li>
+                    <a href="#header-store" class="home" >Home</a>
+                </li>
+                <li>
+                    <a href="#products" class="produ">Products</a>
+                </li>
+           </ul>
+        </div>
+        
+        <nav>
+            <i class='bx bx-moon'></i>
+            <i class='bx bx-cart'>
+                <span class="amountProducts"></span>
+            </i>
+            <i class='bx bx-help-circle' id="modalButton"></i>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Hola, Soy un Ecommers</h2>
+                    <p>¡Bienvenido a nuestra plataforma web! Aquí podrás comprar productos de alta calidad de Academlo a precios excepcionales.<br><br> Aprovecha esta oportunidad, ya que estos productos son un auténtico regalo.
+
+                        Cada precio se muestra claramente en la parte inferior de cada producto. <br><br>Cuando estés seguro de tu elección, simplemente haz clic en el botón de "Agregar" (+) en la parte superior derecha y podrás ver tus productos seleccionados en el carrito de compras. Cuando estés completamente seguro de tu elección, presiona el botón "COMPRAR" y tu compra se realizará sin problemas.
+                        <br><br>
+                        Esperamos que disfrutes de nuestra página y te deseamos un excelente día. ¡Gracias por elegirnos!</p>
+                </div>
+            </div>
+            <div class="menu-toggle">
+                <i class="bx bx-menu"></i>
+            </div>
+        
+            <!-- Menú principal -->
+            <nav class="main-menu">
+                <ul>
+                        <span class="store">STORE</span></a></li>
+                    <li><a href="#header-store" class="home">Home</a></li>
+                    <li><a href="#products" class="produ">Products</a></li>
+                </ul>
+            </nav>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="text_content">
+            <h1>New Sweatshirt COLLECTIONS 2024</h1>
+            <p>Latest arrival of the new Hanes Midweight Crewneck sweatshirt imported from the 2022 series, with a modern design.</p>
+            <h3>$14.00</h3>
+            <a href="#products">Show more</a>
+        </div>
+        <div class="imagen_principal">
+            <img src="./img/sweater1_o8qh0p-removebg-preview.png" alt="image">
+        </div>
+    </div>
+    <div class="filtros">
+        <div class="buttons">
+            <button data-filter="all">All</button>
+            <button data-filter=".shirt">Camisetas</button>
+            <button data-filter=".hoddie">Hoddie</button>
+            <button data-filter=".sweater">Sweater</button>
+        </div>
+    </div>
+    <div class="products"></div>
+    <div class="cart">
+        <div class="cart__products"></div>
+        <div class="cart__total">
+            <div class="cart__total--info">
+                <span class="info__total"></span>
+                <span class="info__amount"></span>
+            </div>
+
+            <button class="btn__buy">Comprar</button>
+        </div>
+    </div>
+    <footer>
+
+        <div class="container__footer">
+            <div class="box__footer">
+                <div class="logo">
+                    <img src="imagenes/logo.png" alt="">
+                </div>
+                <div class="terms">
+                    <p>¡Bienvenidos a mi proyecto!<br>
+
+                        Soy Hayder Arenas Montoya, y mi proyecto se inspira en un eCommerce de productos de ropa de alta calidad, influenciado por el bootcamp de Academlo. Para su desarrollo, se emplearon los siguientes lenguajes:
+                        <br>
+                        <br>
+                        ° HTML<br>
+                        ° JavaScript (JS)<br>
+                        ° CSS<br>
+                    Tambien en "Link Block" podras encontrar mi portafolio y conocer mas sobre mi. </p>
+                </div>
+            </div>
+    
+    
+            <!-- CAJAS footer -->
+    
+            <div class="box__footer">
+                <h2>STORE</h2>
+                <a href="index.html">Home</a>
+                <a href="#products">To boy</a>
+            </div>
+            <div class="box__footer">
+                <h2>PRODUCTS</h2>
+                <a href="#">All</a>
+                <a href="#">Hoodies</a>
+                <a href="#">Shirts</a>
+                <a href="#">About Us</a>
+                <a href="#">Sweatshirt</a>
+            </div>
+    
+            <div class="box__footer">
+                <h2 id="footer">Redes Sociales</h2>
+                <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
+                <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
+                <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+                <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
+            </div>
+            <div class="informacion">Nombre: Hayder Arenas Montoya, repositorio : <i class='bx bx-message-square-dots'></i><a href="https://prismatic-hotteok-34f7d5.netlify.app"> Link Block</a></div>
+            <div class="box__footer">
+                <h2 id="textoo">UBICANOS</h2>
+                <iframe class="ubicacion" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.3641641591194!2d-75.57308548573384!3d6.346868226953564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442fb47c0ded43%3A0xc862d474767dfa54!2sCentro%20Recreativo%20Villa%20Elena!5e0!3m2!1ses!2sco!4v1637596808110!5m2!1ses!2sco" allowfullscreen="" loading="lazy" aling="right"></iframe>
+    
+            </div>
+        </div>
+    
+        <div class="box__copyright">
+            <hr>
+            <p>Todos los derechos de <b>Hayder Arenas Montoya</b> © 2023 </p>
+        </div>
+    </footer>
+</body>
+</html>
